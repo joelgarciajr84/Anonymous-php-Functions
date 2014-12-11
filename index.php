@@ -9,7 +9,6 @@ function LandingGearStatus($status, $callback) {
 	} else {
 
 		$status = "nok";
-
 	}
 
 	if (is_callable($callback)) {
@@ -20,7 +19,7 @@ function LandingGearStatus($status, $callback) {
 
 LandingGearStatus("DowN", function ($x) {
 
-	echo $x;
+	var_dump($x);
 });
 
 ?>
